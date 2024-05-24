@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    --color-background: black;
+    --color-foreground: white;
+
+    color: var(--color-foreground);
+    font-family: "Source Code Pro";
+
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+/* Book info */
+#book-info {
+    margin: 1em;
+}
+#book-info span {
+    display: block;
+    line-height: 0.9;
+}
+#book-title {
+    font-size: 10vmin;
+    font-weight: 600;
+    color: var(--color-foreground);
+    opacity: 0.3;
+}
+#book-author {
+    font-size: 8vmin;
+    color: var(--color-foreground);
+    opacity: 0.15;
+}
+#book-chapter {
+    font-size: 4vmin;
+    color: var(--color-foreground);
+    opacity: 0.15;
+}
+
+
+/* footer */
+#footer {
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;   
+}
+/* Center div */
+#center-div {
+    position: absolute;
+    height: 40vh;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#start-test-hint {
+    font-size: 3vmin;
+    font-weight: 500;
+}
+#current-word {
+    font-size: 20vmin;
+    font-weight: 500;
+    color: var(--color-foreground);
+    opacity: 0.3;
+
+    transition: opacity 0.1s ease-in-out;
+}
+#wpm-monitor {
+    padding-top: 4vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    width: 100%;
+    font-size: 3vmin;
+}
+#wpm-monitor #current-wpm {
+    color: var(--color-foreground);
+    opacity: 1;
+    font-size: 4vmin;
+}
+
+/* Buttons */
+.button {
+    color: rgba(255, 255, 255, 0.3);
+    /*transition: 0.2s;*/
+}
+.button:hover {
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+/* When in read mode */
+.hidden-when-test {
+    opacity: 1;
+    transition: opacity 0.1s ease-in-out;
+}
+.hidden-when-test[reading="true"] {
+    opacity: 0;
+}
+.hidden-when-test[reading="false"] {
+    opacity: 1;
+}
+#current-word[reading="true"] {
+    opacity: 1;
+}

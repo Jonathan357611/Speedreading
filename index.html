@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedreading</title>
+
+    <link rel="stylesheet" href="/styles/style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="/main.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="book-info" class="hidden-when-test">
+            <span id="book-title">Moby Dick</span>
+            <span id="book-author">Herman Melville</span>
+            <span id="book-chapter">CHAPTER LXXI. THE JEROBOAM'S STORY</span>
+        </div>
+        <div id="center-div">
+            <span id="start-test-hint" class="hidden-when-test">hold [space] to read</span>
+            <span id="current-word" typing="false">
+                Aye?
+            </span>
+            <div id="wpm-monitor">
+                <span id="button-less-wpm" class="hidden-when-test button">less</span>
+                <span id="current-wpm">300 WPM</span>
+                <span id="button-more-wpm" class="hidden-when-test button">more</span>
+            </div>
+        </div>
+        <div id="footer" class="hidden-when-test">
+            <span class="button">new literature</span>
+            <span class="button">change language</span>
+            <span class="button">change theme</span>
+            <span class="button">my portfolio</span>
+        </div>
+    </div>
+</body>
+</html>
