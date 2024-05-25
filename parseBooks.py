@@ -1,37 +1,49 @@
 import requests
 import json
+import os
+import re
 
-final = {"languages": {}}
+languages = ["en", "es", "zh", "pt", "ja", "fr", "de", "it"] # Define all desired languages
+final = {"languages": {language: [] for language in languages}} # Create dict that will hold all book infos
+book_pattern = re.compile(r'\*\*\*.*?\*\*\*(.*?)\*\*\*.*?\*\*\*', re.DOTALL) # Regex pattern to later remove Gutenberg-headers
 
-url = "https://gutendex.com/books?author_year_start=1850&copyright=false&mimetye=text%2Fplain"
-n_compat = 0
-n_loop = 1
-while True:
+# Create "books" folder
+if not os.path.exists("books"):
+    os.mkdir("books")
+
+# Download books in each language
+for language in languages:
+    print(f"Parsing books in language \"{language}\"...")
+    url = f"https://gutendex.com/books?author_year_start=1850&copyright=false&mimetye=text%2Fplain&languages={language}" # Url with filters to ensure correct file formats, language, etc.
     books_request = requests.get(url)
     books = books_request.json()
-    pages = round(books["count"] / 32)
-    print(f"Loading page {n_loop}/{pages}...")
-    
-    for book in books["results"]:
-        if book["languages"][0] not in final["languages"].keys():
-            final["languages"][book["languages"][0]] = []
-        
-        if book["media_type"] == "Text" and book["copyright"] == False and book["authors"] != [] and book["authors"][0]["birth_year"] != None and book["authors"][0]["birth_year"] > 1700 and "text/plain; charset=us-ascii" in book["formats"].keys():
-            final["languages"][book["languages"][0]].append({
+
+    for i in range(min(len(books["results"]), 15)): # Iterate maximally 15 books
+        book = books["results"][i]
+        if book["media_type"] == "Text" and book["copyright"] == False and book["authors"] != [] and book["authors"][0]["birth_year"] != None and book["authors"][0]["birth_year"] > 1700 and "text/plain; charset=us-ascii" in book["formats"].keys(): # Double check if all required informations are given
+            # Add to "final" dictionary
+            final["languages"][language].append({
                 "id": book["id"],
                 "title": book["title"],
                 "book_url": book["formats"]["text/plain; charset=us-ascii"],
                 "author": book["authors"][0]["name"]
             })
-            n_compat += 1
 
-    n_loop += 1
+    # Download books as txt files
+    for book in final["languages"][language]:
+        # Create folder for language if not existant
+        if not os.path.exists("books/" + language):
+            os.mkdir("books/" + language)
 
+        # Download the book and apply regex pattern
+        book_text = book_pattern.search(requests.get(book["book_url"]).text).group(1).strip()
+        
+        # Save book in designated folder
+        with open(f"books/{language}/{book['id']}.txt", "w") as f:
+            f.write(book_text)
+
+        print(f"Downloaded book \"{book['title']}\" to books/{language}/{book['id']}.txt")
+
+    # Save each iteration
     with open("books.json", "w") as f:
         f.write(json.dumps(final, indent=4))
-
-    url = books["next"]
-    if url == None:
-        break
-
-print(f"Done! {n_compat} books saved.")
