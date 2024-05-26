@@ -7,6 +7,7 @@ let current_word = 0;
 let spacebar_pressed = false;
 let current_book_id = -1; // Hold current book to not load the same twice in a row
 let current_theme = "dark"; // Set current theme
+let screen_mode = "landscape"; // Current screen mode, will be calculated later
 
 var intervalId; // Store interval function here
 
@@ -85,7 +86,12 @@ function loadRandomBook(language) {
 
             // Indicate that a book has been loaded
             is_book_loading = false;
-            $("#status-indicator").text("hold [space] to read");
+
+            if (screen_mode == "landscape") {
+                $("#status-indicator").text("hold [space] to read");
+            } else {
+                $("#status-indicator").text("hold screen to read");
+            }
         })
     });
 }
@@ -117,6 +123,26 @@ $(document).ready(function() {
     $("#menu").hide();
     loadRandomBook(language); // Load random book initially
 
+    // Define portrait mode media quer
+    var portraitQuery = window.matchMedia("(orientation: portrait)");
+
+    // Function to handle orientation change
+    function handleOrientationChange(mq) {
+        if (mq.matches) { // If portrait mode
+            screen_mode = "portrait";
+        } else { // If landscape mode
+            screen_mode = "landscape";
+        }
+    }
+
+    // Initial screen direction check
+    handleOrientationChange(portraitQuery);
+
+    // Add event listener to screen dimension changes
+    portraitQuery.addEventListener("change", function(e) {
+        handleOrientationChange(e);
+    });
+
     $(document).keydown(function(event) {
         if (event.keyCode === 32 && !is_book_loading && !spacebar_pressed) { // When spacebar pressed
             spacebar_pressed = true;
@@ -141,6 +167,23 @@ $(document).ready(function() {
             clearInterval(intervalId); // Clear interval function
         }
     });
+
+
+    // Function to handle touchstart event
+    function handleTouchstart(event) {
+        var simulatedKeydownEvent = new $.Event("keydown", { keyCode: 32 });
+        $(document).trigger(simulatedKeydownEvent);
+    }
+
+    // Function to handle touchend event
+    function handleTouchend(event) {
+        var simulatedKeyupEvent = new $.Event("keyup", { keyCode: 32 });
+        $(document).trigger(simulatedKeyupEvent);
+    }
+
+    // Attach touch event listeners directly to the div
+    $('#center-div').on('touchstart', handleTouchstart);
+    $('#center-div').on('touchend touchcancel', handleTouchend);
     
     // Manual change wpm buttons
     $("#button-more-wpm").click(function() {
