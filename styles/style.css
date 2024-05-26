@@ -1,18 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Lora:regular,500,600,700,italic,500italic,600italic,700italic);
 
 * {
-    --color-background: black;
-    --color-foreground: white;
-
-    color: var(--color-foreground);
     font-family: "Source Code Pro";
 
     padding: 0;
     margin: 0;
 }
 
+:root {
+    --color-background: black;
+    --color-foreground: white;
+}
+
 body {
+    color: var(--color-foreground);
     background-color: var(--color-background);
+    overflow: hidden;
 }
 
 /* Book info */
@@ -50,6 +54,10 @@ body {
     display: flex;
     justify-content: space-evenly;   
 }
+#footer span {
+    color: var(--color-foreground);
+}
+
 /* Center div */
 #center-div {
     position: absolute;
@@ -62,25 +70,29 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-#start-test-hint {
+#status-indicator {
     font-size: 3vmin;
     font-weight: 500;
 }
 #current-word {
-    font-size: 20vmin;
-    font-weight: 500;
+    font-size: 15vmin;
+    font-weight: 400;
     color: var(--color-foreground);
     opacity: 0.3;
+    font-family: "Lora";
 
-    transition: opacity 0.1s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 #wpm-monitor {
     padding-top: 4vh;
     display: flex;
     justify-content: space-around;
     align-items: end;
-    width: 100%;
     font-size: 3vmin;
+}
+#wpm-monitor span {
+    margin-left: 1em;
+    margin-right: 1em;
 }
 #wpm-monitor #current-wpm {
     color: var(--color-foreground);
@@ -101,7 +113,7 @@ body {
 /* When in read mode */
 .hidden-when-test {
     opacity: 1;
-    transition: opacity 0.1s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 .hidden-when-test[reading="true"] {
     opacity: 0;
@@ -111,4 +123,46 @@ body {
 }
 #current-word[reading="true"] {
     opacity: 1;
+}
+
+/* Menu */
+#menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-background);
+    opacity: 0.9;
+}
+#menu-options {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+.menu-option {
+    font-size: 3vmin;
+    line-height: 1.6;
+    border-left: 4px solid rgba(0, 0, 0, 0);
+    padding-left: 0.2em;
+    transition: border-left 0.2s ease-in-out;
+}
+.menu-option:hover {
+    cursor: pointer;
+    border-left: 4px solid var(--color-foreground);
+}
+#menu-close-button {
+    position: absolute;
+    left: 50%;
+    bottom: 2em;
+    transform: translateX(-50%);
+}
+#menu-close-button {
+    font-size: 3vmin;
+}
+#menu-close-button:hover {
+    cursor: pointer;
 }
