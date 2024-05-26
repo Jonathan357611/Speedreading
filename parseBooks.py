@@ -3,7 +3,7 @@ import json
 import os
 import re
 
-languages = ["en", "es", "zh", "pt", "ja", "fr", "de", "it"] # Define all desired languages
+languages = ["en", "es", "pt", "fr", "de", "it"] # Define all desired languages
 final = {"languages": {language: [] for language in languages}} # Create dict that will hold all book infos
 book_pattern = re.compile(r'\*\*\*.*?\*\*\*(.*?)\*\*\*.*?\*\*\*', re.DOTALL) # Regex pattern to later remove Gutenberg-headers
 
