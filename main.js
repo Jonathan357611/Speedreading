@@ -61,7 +61,7 @@ function loadRandomBook(language) {
     $("#book-title").text("...");
     $("#book-author").text("...");
 
-    $.getJSON("/books.json", function(data) { // Get list of books
+    $.getJSON("books.json", function(data) { // Get list of books
         let books = data["languages"][language]; // All books in specified language
 
         // Ensure not loading the same book twice in a row
