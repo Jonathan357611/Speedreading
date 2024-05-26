@@ -61,7 +61,7 @@ function loadRandomBook(language) {
     $("#book-title").text("...");
     $("#book-author").text("...");
 
-    $.getJSON("books.json", function(data) { // Get list of books
+    $.getJSON(window.location.href + "books.json", function(data) { // Get list of books
         let books = data["languages"][language]; // All books in specified language
 
         // Ensure not loading the same book twice in a row
@@ -78,7 +78,7 @@ function loadRandomBook(language) {
         $("#book-author").text(addEllipsis(book["author"], 30)); // Show book author
     
         // Load words into array
-        $.get("books/" + language + "/" + book["id"] + ".txt", function(data) { // Get text of the random book
+        $.get(window.location.href + "books/" + language + "/" + book["id"] + ".txt", function(data) { // Get text of the random book
             words = data.split((/\s+|\n/)); // All words into array, split by " " and newlines
             current_word = Math.floor(Math.random() * (words.length));
             $("#current-word").text(words[current_word]); // Show word
