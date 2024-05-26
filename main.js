@@ -231,6 +231,6 @@ $(document).ready(function() {
     })
 
     $("#button-portfolio").click(function() {
-        window.open("https://jonathan357611.github.io/", "_blank");
+        window.open("https://github.com/Jonathan357611/Speedreading", "_blank");
     })
 })
