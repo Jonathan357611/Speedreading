@@ -1,0 +1,520 @@
+{
+    "languages": {
+        "en": [
+            {
+                "id": 84,
+                "title": "Frankenstein; Or, The Modern Prometheus",
+                "book_url": "https://www.gutenberg.org/ebooks/84.txt.utf-8",
+                "author": "Shelley, Mary Wollstonecraft"
+            },
+            {
+                "id": 2701,
+                "title": "Moby Dick; Or, The Whale",
+                "book_url": "https://www.gutenberg.org/ebooks/2701.txt.utf-8",
+                "author": "Melville, Herman"
+            },
+            {
+                "id": 37106,
+                "title": "Little Women; Or, Meg, Jo, Beth, and Amy",
+                "book_url": "https://www.gutenberg.org/ebooks/37106.txt.utf-8",
+                "author": "Alcott, Louisa May"
+            },
+            {
+                "id": 145,
+                "title": "Middlemarch",
+                "book_url": "https://www.gutenberg.org/ebooks/145.txt.utf-8",
+                "author": "Eliot, George"
+            },
+            {
+                "id": 2641,
+                "title": "A Room with a View",
+                "book_url": "https://www.gutenberg.org/ebooks/2641.txt.utf-8",
+                "author": "Forster, E. M. (Edward Morgan)"
+            },
+            {
+                "id": 16389,
+                "title": "The Enchanted April",
+                "book_url": "https://www.gutenberg.org/ebooks/16389.txt.utf-8",
+                "author": "Von Arnim, Elizabeth"
+            },
+            {
+                "id": 67979,
+                "title": "The Blue Castle: a novel",
+                "book_url": "https://www.gutenberg.org/ebooks/67979.txt.utf-8",
+                "author": "Montgomery, L. M. (Lucy Maud)"
+            },
+            {
+                "id": 394,
+                "title": "Cranford",
+                "book_url": "https://www.gutenberg.org/ebooks/394.txt.utf-8",
+                "author": "Gaskell, Elizabeth Cleghorn"
+            },
+            {
+                "id": 1259,
+                "title": "Twenty years after",
+                "book_url": "https://www.gutenberg.org/ebooks/1259.txt.utf-8",
+                "author": "Dumas, Alexandre"
+            },
+            {
+                "id": 5197,
+                "title": "My Life \u2014 Volume 1",
+                "book_url": "https://www.gutenberg.org/ebooks/5197.txt.utf-8",
+                "author": "Wagner, Richard"
+            },
+            {
+                "id": 11,
+                "title": "Alice's Adventures in Wonderland",
+                "book_url": "https://www.gutenberg.org/ebooks/11.txt.utf-8",
+                "author": "Carroll, Lewis"
+            },
+            {
+                "id": 2542,
+                "title": "A Doll's House : a play",
+                "book_url": "https://www.gutenberg.org/ebooks/2542.txt.utf-8",
+                "author": "Ibsen, Henrik"
+            },
+            {
+                "id": 844,
+                "title": "The Importance of Being Earnest: A Trivial Comedy for Serious People",
+                "book_url": "https://www.gutenberg.org/ebooks/844.txt.utf-8",
+                "author": "Wilde, Oscar"
+            },
+            {
+                "id": 64317,
+                "title": "The Great Gatsby",
+                "book_url": "https://www.gutenberg.org/ebooks/64317.txt.utf-8",
+                "author": "Fitzgerald, F. Scott (Francis Scott)"
+            },
+            {
+                "id": 174,
+                "title": "The Picture of Dorian Gray",
+                "book_url": "https://www.gutenberg.org/ebooks/174.txt.utf-8",
+                "author": "Wilde, Oscar"
+            }
+        ],
+        "es": [
+            {
+                "id": 18600,
+                "title": "Mi Ultimo Adi\u00f3s",
+                "book_url": "https://www.gutenberg.org/ebooks/18600.txt.utf-8",
+                "author": "Rizal, Jos\u00e9"
+            },
+            {
+                "id": 20738,
+                "title": "Diccionario Ingles-Espa\u00f1ol-Tagalog: Con partes de la oracion y pronunciacion figurada",
+                "book_url": "https://www.gutenberg.org/ebooks/20738.txt.utf-8",
+                "author": "Calder\u00f3n, Sofronio G."
+            },
+            {
+                "id": 15725,
+                "title": "Do\u00f1a Perfecta",
+                "book_url": "https://www.gutenberg.org/ebooks/15725.txt.utf-8",
+                "author": "P\u00e9rez Gald\u00f3s, Benito"
+            },
+            {
+                "id": 13507,
+                "title": "Cuentos de Amor de Locura y de Muerte",
+                "book_url": "https://www.gutenberg.org/ebooks/13507.txt.utf-8",
+                "author": "Quiroga, Horacio"
+            },
+            {
+                "id": 15353,
+                "title": "A First Spanish Reader",
+                "book_url": "https://www.gutenberg.org/ebooks/15353.txt.utf-8",
+                "author": "Remy, Alfred"
+            },
+            {
+                "id": 49836,
+                "title": "Niebla (Nivola)",
+                "book_url": "https://www.gutenberg.org/ebooks/49836.txt.utf-8",
+                "author": "Unamuno, Miguel de"
+            },
+            {
+                "id": 61851,
+                "title": "El crimen y el castigo",
+                "book_url": "https://www.gutenberg.org/ebooks/61851.txt.utf-8",
+                "author": "Dostoyevsky, Fyodor"
+            },
+            {
+                "id": 47584,
+                "title": "Noli me t\u00e1ngere: Novela Tagala, Edici\u00f3n completa con notas de R. Sempau",
+                "book_url": "https://www.gutenberg.org/ebooks/47584.txt.utf-8",
+                "author": "Rizal, Jos\u00e9"
+            },
+            {
+                "id": 60464,
+                "title": "El \u00e1rbol de la ciencia: novela",
+                "book_url": "https://www.gutenberg.org/ebooks/60464.txt.utf-8",
+                "author": "Baroja, P\u00edo"
+            },
+            {
+                "id": 69552,
+                "title": "El libro de las tierras v\u00edrgenes",
+                "book_url": "https://www.gutenberg.org/ebooks/69552.txt.utf-8",
+                "author": "Kipling, Rudyard"
+            },
+            {
+                "id": 45438,
+                "title": "La isla del tesoro",
+                "book_url": "https://www.gutenberg.org/ebooks/45438.txt.utf-8",
+                "author": "Stevenson, Robert Louis"
+            },
+            {
+                "id": 30903,
+                "title": "El Filibusterismo (Continuaci\u00f3n del Noli me t\u00e1ngere)",
+                "book_url": "https://www.gutenberg.org/ebooks/30903.txt.utf-8",
+                "author": "Rizal, Jos\u00e9"
+            },
+            {
+                "id": 22065,
+                "title": "An Elementary Spanish Reader",
+                "book_url": "https://www.gutenberg.org/ebooks/22065.txt.utf-8",
+                "author": "Harrison, Earl Stanley"
+            },
+            {
+                "id": 60675,
+                "title": "Recuerdos de mi vida (tomo 2 de 2)",
+                "book_url": "https://www.gutenberg.org/ebooks/60675.txt.utf-8",
+                "author": "Ram\u00f3n y Cajal, Santiago"
+            }
+        ],
+        "pt": [
+            {
+                "id": 31552,
+                "title": "Novo dicion\u00e1rio da l\u00edngua portuguesa",
+                "book_url": "https://www.gutenberg.org/ebooks/31552.txt.utf-8",
+                "author": "Figueiredo, C\u00e2ndido de"
+            },
+            {
+                "id": 55752,
+                "title": "Dom Casmurro",
+                "book_url": "https://www.gutenberg.org/ebooks/55752.txt.utf-8",
+                "author": "Machado de Assis"
+            },
+            {
+                "id": 40409,
+                "title": "Os Maias: episodios da vida romantica",
+                "book_url": "https://www.gutenberg.org/ebooks/40409.txt.utf-8",
+                "author": "Queir\u00f3s, E\u00e7a de"
+            },
+            {
+                "id": 70819,
+                "title": "Contos",
+                "book_url": "https://www.gutenberg.org/ebooks/70819.txt.utf-8",
+                "author": "Almeida, Fialho de"
+            },
+            {
+                "id": 71031,
+                "title": "Principios e quest\u00f5es de philosophia politica (Vol. 1 of 2)",
+                "book_url": "https://www.gutenberg.org/ebooks/71031.txt.utf-8",
+                "author": "C\u00e2ndido, Ant\u00f3nio"
+            },
+            {
+                "id": 54829,
+                "title": "Memorias Posthumas de Braz Cubas",
+                "book_url": "https://www.gutenberg.org/ebooks/54829.txt.utf-8",
+                "author": "Machado de Assis"
+            },
+            {
+                "id": 31971,
+                "title": "O crime do padre Amaro, scenas da vida devota",
+                "book_url": "https://www.gutenberg.org/ebooks/31971.txt.utf-8",
+                "author": "Queir\u00f3s, E\u00e7a de"
+            },
+            {
+                "id": 34387,
+                "title": "Historia de Portugal: Tomo I",
+                "book_url": "https://www.gutenberg.org/ebooks/34387.txt.utf-8",
+                "author": "Oliveira Martins, J. P. (Joaquim Pedro)"
+            },
+            {
+                "id": 31347,
+                "title": "Contos",
+                "book_url": "https://www.gutenberg.org/ebooks/31347.txt.utf-8",
+                "author": "Queir\u00f3s, E\u00e7a de"
+            },
+            {
+                "id": 18220,
+                "title": "A Cidade e as Serras",
+                "book_url": "https://www.gutenberg.org/ebooks/18220.txt.utf-8",
+                "author": "Queir\u00f3s, E\u00e7a de"
+            },
+            {
+                "id": 67724,
+                "title": "O Guarany: romance brazileiro, Vol. 1 (of 2)",
+                "book_url": "https://www.gutenberg.org/ebooks/67724.txt.utf-8",
+                "author": "Alencar, Jos\u00e9 Martiniano de"
+            },
+            {
+                "id": 45840,
+                "title": "Historias de Reis e Principes",
+                "book_url": "https://www.gutenberg.org/ebooks/45840.txt.utf-8",
+                "author": "Pimentel, Alberto"
+            },
+            {
+                "id": 30510,
+                "title": "Perolas e Diamantes: Contos Infantis",
+                "book_url": "https://www.gutenberg.org/ebooks/30510.txt.utf-8",
+                "author": "Grimm, Jacob"
+            },
+            {
+                "id": 15047,
+                "title": "Bases da ortografia portuguesa",
+                "book_url": "https://www.gutenberg.org/ebooks/15047.txt.utf-8",
+                "author": "Abreu, G. de Vasconcellos (Guilherme)"
+            },
+            {
+                "id": 55682,
+                "title": "Quincas Borba",
+                "book_url": "https://www.gutenberg.org/ebooks/55682.txt.utf-8",
+                "author": "Machado de Assis"
+            }
+        ],
+        "fr": [
+            {
+                "id": 2650,
+                "title": "Du c\u00f4t\u00e9 de chez Swann",
+                "book_url": "https://www.gutenberg.org/ebooks/2650.txt.utf-8",
+                "author": "Proust, Marcel"
+            },
+            {
+                "id": 17489,
+                "title": "Les mis\u00e9rables Tome I: Fantine",
+                "book_url": "https://www.gutenberg.org/ebooks/17489.txt.utf-8",
+                "author": "Hugo, Victor"
+            },
+            {
+                "id": 13951,
+                "title": "Les trois mousquetaires",
+                "book_url": "https://www.gutenberg.org/ebooks/13951.txt.utf-8",
+                "author": "Dumas, Alexandre"
+            },
+            {
+                "id": 17989,
+                "title": "Le comte de Monte-Cristo, Tome I",
+                "book_url": "https://www.gutenberg.org/ebooks/17989.txt.utf-8",
+                "author": "Dumas, Alexandre"
+            },
+            {
+                "id": 6099,
+                "title": "Les Fleurs du Mal",
+                "book_url": "https://www.gutenberg.org/ebooks/6099.txt.utf-8",
+                "author": "Baudelaire, Charles"
+            },
+            {
+                "id": 70891,
+                "title": "Notre-Dame de Paris - Tome 1",
+                "book_url": "https://www.gutenberg.org/ebooks/70891.txt.utf-8",
+                "author": "Hugo, Victor"
+            },
+            {
+                "id": 32854,
+                "title": "Ars\u00e8ne Lupin, gentleman-cambrioleur",
+                "book_url": "https://www.gutenberg.org/ebooks/32854.txt.utf-8",
+                "author": "Leblanc, Maurice"
+            },
+            {
+                "id": 70954,
+                "title": "Trois femmes",
+                "book_url": "https://www.gutenberg.org/ebooks/70954.txt.utf-8",
+                "author": "Mille, Pierre"
+            },
+            {
+                "id": 71062,
+                "title": "Charmes",
+                "book_url": "https://www.gutenberg.org/ebooks/71062.txt.utf-8",
+                "author": "Val\u00e9ry, Paul"
+            },
+            {
+                "id": 14155,
+                "title": "Madame Bovary",
+                "book_url": "https://www.gutenberg.org/ebooks/14155.txt.utf-8",
+                "author": "Flaubert, Gustave"
+            },
+            {
+                "id": 40530,
+                "title": "Essai d'Introduction \u00e0 l'Histoire G\u00e9n\u00e9alogique",
+                "book_url": "https://www.gutenberg.org/ebooks/40530.txt.utf-8",
+                "author": "Poli, Oscar de (Philippe Fran\u00e7ois Joseph)"
+            },
+            {
+                "id": 36708,
+                "title": "Soeur Th\u00e9r\u00e8se de l'Enfant-J\u00e9sus et de la Sainte Face: Histoire d'une \u00e2me \u00e9crite par elle-m\u00eame",
+                "book_url": "https://www.gutenberg.org/ebooks/36708.txt.utf-8",
+                "author": "Th\u00e9r\u00e8se, de Lisieux, Saint"
+            },
+            {
+                "id": 57992,
+                "title": "Des variations du langage fran\u00e7ais depuis le XIIe si\u00e8cle: ou recherche des principes qui devraient r\u00e9gler l'orthographe et la prononciation",
+                "book_url": "https://www.gutenberg.org/ebooks/57992.txt.utf-8",
+                "author": "G\u00e9nin, F. (Fran\u00e7ois)"
+            },
+            {
+                "id": 4791,
+                "title": "Voyage au Centre de la Terre",
+                "book_url": "https://www.gutenberg.org/ebooks/4791.txt.utf-8",
+                "author": "Verne, Jules"
+            }
+        ],
+        "de": [
+            {
+                "id": 22367,
+                "title": "Die Verwandlung",
+                "book_url": "https://www.gutenberg.org/ebooks/22367.txt.utf-8",
+                "author": "Kafka, Franz"
+            },
+            {
+                "id": 24571,
+                "title": "Der Struwwelpeter: oder lustige Geschichten und drollige Bilder",
+                "book_url": "https://www.gutenberg.org/ebooks/24571.txt.utf-8",
+                "author": "Hoffmann, Heinrich"
+            },
+            {
+                "id": 7205,
+                "title": "Also sprach Zarathustra: Ein Buch f\u00fcr Alle und Keinen",
+                "book_url": "https://www.gutenberg.org/ebooks/7205.txt.utf-8",
+                "author": "Nietzsche, Friedrich Wilhelm"
+            },
+            {
+                "id": 40739,
+                "title": "Die Traumdeutung",
+                "book_url": "https://www.gutenberg.org/ebooks/40739.txt.utf-8",
+                "author": "Freud, Sigmund"
+            },
+            {
+                "id": 57952,
+                "title": "Die Naturwissenschaften in ihrer Entwicklung und in ihrem Zusammenhange, III. Band: Das Emporbl\u00fchen der modernen Naturwissenschaften bis zur Entdeckung des Energieprinzipes",
+                "book_url": "https://www.gutenberg.org/ebooks/57952.txt.utf-8",
+                "author": "Dannemann, Friedrich"
+            },
+            {
+                "id": 43078,
+                "title": "Der Occultismus des Altertums",
+                "book_url": "https://www.gutenberg.org/ebooks/43078.txt.utf-8",
+                "author": "Kiesewetter, Karl"
+            },
+            {
+                "id": 29376,
+                "title": "Bahnw\u00e4rter Thiel",
+                "book_url": "https://www.gutenberg.org/ebooks/29376.txt.utf-8",
+                "author": "Hauptmann, Gerhart"
+            },
+            {
+                "id": 54832,
+                "title": "Geschichte des Zeitalters der Entdeckungen",
+                "book_url": "https://www.gutenberg.org/ebooks/54832.txt.utf-8",
+                "author": "Ruge, Sophus"
+            },
+            {
+                "id": 53322,
+                "title": "Reisen in den Philippinen",
+                "book_url": "https://www.gutenberg.org/ebooks/53322.txt.utf-8",
+                "author": "Jagor, Fedor"
+            },
+            {
+                "id": 41907,
+                "title": "Demian: Die Geschichte von Emil Sinclairs Jugend",
+                "book_url": "https://www.gutenberg.org/ebooks/41907.txt.utf-8",
+                "author": "Hesse, Hermann"
+            },
+            {
+                "id": 24746,
+                "title": "Reise in die Aequinoctial-Gegenden des neuen Continents. Band 2.",
+                "book_url": "https://www.gutenberg.org/ebooks/24746.txt.utf-8",
+                "author": "Humboldt, Alexander von"
+            },
+            {
+                "id": 65661,
+                "title": "Der Zauberberg. Erster Band",
+                "book_url": "https://www.gutenberg.org/ebooks/65661.txt.utf-8",
+                "author": "Mann, Thomas"
+            }
+        ],
+        "it": [
+            {
+                "id": 45594,
+                "title": "Sotto il velame: Saggio di un'interpretazione generale del poema sacro",
+                "book_url": "https://www.gutenberg.org/ebooks/45594.txt.utf-8",
+                "author": "Pascoli, Giovanni"
+            },
+            {
+                "id": 46887,
+                "title": "Storia dei musulmani di Sicilia, vol. I",
+                "book_url": "https://www.gutenberg.org/ebooks/46887.txt.utf-8",
+                "author": "Amari, Michele"
+            },
+            {
+                "id": 46997,
+                "title": "Storia d'Inghilterra, vol 2",
+                "book_url": "https://www.gutenberg.org/ebooks/46997.txt.utf-8",
+                "author": "Macaulay, Thomas Babington Macaulay, Baron"
+            },
+            {
+                "id": 41948,
+                "title": "Guida delle Prealpi Giulie: Distretti di Gemona, Tarcento, S. Daniele, Cividale e S. Pietro",
+                "book_url": "https://www.gutenberg.org/ebooks/41948.txt.utf-8",
+                "author": "Marinelli, Olinto"
+            },
+            {
+                "id": 52484,
+                "title": "Le avventure di Pinocchio: Storia di un burattino",
+                "book_url": "https://www.gutenberg.org/ebooks/52484.txt.utf-8",
+                "author": "Collodi, Carlo"
+            },
+            {
+                "id": 52281,
+                "title": "La casa e la famiglia di Masaniello: Ricordi della storia e della vita Napolitana nel Secolo XVII",
+                "book_url": "https://www.gutenberg.org/ebooks/52281.txt.utf-8",
+                "author": "Capasso, Bartolommeo"
+            },
+            {
+                "id": 48445,
+                "title": "L'assedio di Firenze",
+                "book_url": "https://www.gutenberg.org/ebooks/48445.txt.utf-8",
+                "author": "Guerrazzi, Francesco Domenico"
+            },
+            {
+                "id": 55545,
+                "title": "Le invasioni barbariche in Italia",
+                "book_url": "https://www.gutenberg.org/ebooks/55545.txt.utf-8",
+                "author": "Villari, Pasquale"
+            },
+            {
+                "id": 73311,
+                "title": "Capitan Riccardo : $b romanzo",
+                "book_url": "https://www.gutenberg.org/ebooks/73311.txt.utf-8",
+                "author": "Misasi, Nicola"
+            },
+            {
+                "id": 45334,
+                "title": "I promessi sposi.: Opere di Alessando Manzoni, vol. 1",
+                "book_url": "https://www.gutenberg.org/ebooks/45334.txt.utf-8",
+                "author": "Manzoni, Alessandro"
+            },
+            {
+                "id": 73336,
+                "title": "La Citt\u00e0 dell'Oro : $b racconto",
+                "book_url": "https://www.gutenberg.org/ebooks/73336.txt.utf-8",
+                "author": "Salgari, Emilio"
+            },
+            {
+                "id": 73373,
+                "title": "Martin Eden : $b romanzo",
+                "book_url": "https://www.gutenberg.org/ebooks/73373.txt.utf-8",
+                "author": "London, Jack"
+            },
+            {
+                "id": 47786,
+                "title": "Una Donna",
+                "book_url": "https://www.gutenberg.org/ebooks/47786.txt.utf-8",
+                "author": "Aleramo, Sibilla"
+            },
+            {
+                "id": 28371,
+                "title": "Le avventure d'Alice nel paese delle meraviglie",
+                "book_url": "https://www.gutenberg.org/ebooks/28371.txt.utf-8",
+                "author": "Carroll, Lewis"
+            }
+        ]
+    }
+}
